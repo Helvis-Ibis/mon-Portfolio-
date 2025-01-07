@@ -7,12 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
+      <style>
+        /* Styles pour l'image de profil */
+        .profile-container {
+            text-align: center;
+            margin-top: 50px;
+            position: absolute;
+            top: 0px;
+            left: 5%;
+        }
+
+        .profile-image {
+            width: 250px; /* Taille de l'image */
+            height: 250px;
+            border-radius: 50%; /* Pour faire un cercle */
+            border: 10px solid gray; /* Bordure verte */
+            object-fit: cover; /* Maintient la forme de l'image sans la déformer */
+        }
+
+        .profile-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .profile-description {
+            color: #555;
+        }
+    </style>
     <style>
         /* Effet parallax avec fond dynamique */
+        
         .hero-background {
             background-image: 
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
-                url('../-6039689243812542466_121.jpg');
+                url('');
             background-position: center;
             background-repeat: no-repeat;
             height: 300px;
@@ -39,6 +68,11 @@
   <header class="hero-background text-white text-center py-20 bg-cover bg-center">
         <div style="height: 51%;" class="overlay  absolute inset-0 bg-black opacity-50"></div>
     <div class="relative z-10">
+        <div class="profile-container">
+           <img src="./me.jpg" alt="Votre Avatar" class="profile-image">
+
+        </div>
+
         <h1 class="text-5xl font-extrabold text-shadow-lg mb-4">DAKO Mahougnon Helvis</h1>
         <p class="text-xl font-medium mb-6">Développeur Web et Mobile</p>
 <p class="text-lg flex items-center justify-center space-x-2">
@@ -242,30 +276,7 @@
     </footer>
 
     <!-- JavaScript pour l'effet de défilement -->
-   <script>
-        // Liste des images
-        const images = [
-            '../-6039689243812542466_121.jpg',
-            '../h.jpg',  // Changez cette URL par une autre image
-        ];
-
-        let currentImageIndex = 0;
-        const heroBackground = document.querySelector('.hero-background');
-
-        // Fonction pour changer l'image de fond
-        function changeBackgroundImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length; // Incrémenter l'index, et revenir au début si on dépasse
-            heroBackground.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('${images[currentImageIndex]}')`;
-        }
-
-        // Initialisation de l'effet et changement d'image toutes les 5 secondes
-        setInterval(changeBackgroundImage, 5000);
-
-        
-
-
-    </script>
-
+  
 
 </body>
 </html>
