@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DAKO Mahougnon Helvis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Effet parallax avec fond dynamique */
+        .hero-background {
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+                url('../-6039689243812542466_121.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            transition: background-position 0.5s ease-in-out, background-color 0.5s ease-in-out;
+        }
+
+        /* Ajout d'un changement dynamique de la couleur du fond */
+        .scroll-effect {
+            background-position: center calc(50% + 100px);
+            background-color: rgba(0, 0, 0, 0.8); /* Change la couleur de fond pour un effet visuel dynamique */
+        }
+
+        @media screen and (max-width : 820px) {
+                .hero-background {
+        
+            background-size: contain;
+        }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+  <header class="hero-background text-white text-center py-20 bg-cover bg-center">
+        <div style="height: 51%;" class="overlay  absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10">
+        <h1 class="text-5xl font-extrabold text-shadow-lg mb-4">DAKO Mahougnon Helvis</h1>
+        <p class="text-xl font-medium mb-6">Développeur Web et Mobile</p>
+<p class="text-lg flex items-center justify-center space-x-2">
+    <!-- Icône email -->
+    <a href="mailto:dakohelvis@gmail.com" class="text-blue-300 hover:text-blue-500 transition-colors duration-300 flex items-center space-x-2">
+        <i class="fas fa-envelope"></i>
+        <span>dakohelvis@gmail.com</span>
+    </a>
+    <span class="text-blue-300">|</span>
+    <!-- Icône téléphone -->
+    <span class="text-blue-300 flex items-center space-x-2">
+        <i class="fas fa-phone-alt"></i>
+        <span>+229 0161683037</span>
+    </span>
+</p>
+
+
+
+    </div>
+</header>
+
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-8">
+        
+        <!-- Profil Section -->
+      <section class="bg-white py-8">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Profil</h2>
+    <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
+        <p>
+            Je suis un développeur web et mobile passionné, spécialisé dans la création de solutions numériques modernes et performantes. 
+            Avec une expertise dans le développement d'applications mobiles et de sites web, je m'engage à fournir des expériences informatiques fluides et optimisées. 
+            Curieux et motivé, j'aime apprendre et m'adapter aux nouvelles technologies.
+        </p>
+    </div>
+</section>
+
+
+        <!-- Experience Section -->
+        <section class="container bg-gray-100 py-8">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Expériences Professionnelles</h2>
+    <div class="max-w-8xl mx-auto space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold text-blue-600">Wabajob <span class="text-sm text-gray-500">(2023 - 2024)</span></h3>
+            <p class="text-gray-700 mt-2">Site de recherche d’emploi, de formation et de recrutement. 
+                <a href="https://wabajob.com" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">Visiter</a>
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold text-blue-600">GeoEBC <span class="text-sm text-gray-500">(2022 - 2023)</span></h3>
+            <p class="text-gray-700 mt-2">ONG investie dans la gestion des ressources naturelles. 
+                <a href="https://geoebc.org" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">Visiter</a>
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold text-blue-600">PVRN <span class="text-sm text-gray-500">(2022 - 2023)</span></h3>
+            <p class="text-gray-700 mt-2">Organisation pour la Préservation et la Valorisation des Ressources Naturelles. 
+                <a href="https://pvrnong.org" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">Visiter</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Skills Section -->
+       <section class="bg-gray-50 py-8">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Compétences</h2>
+    <div class="max-w-4xl mx-auto">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-lg text-gray-700">
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">HTML5</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">CSS3</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">JavaScript</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">React JS</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">Laravel</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <p class="font-medium text-gray-800">Android Studio</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- Education Section -->
+     <section class="bg-white py-8">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Éducation</h2>
+    <div class="max-w-4xl mx-auto">
+        <ul class="space-y-6 text-lg text-gray-700">
+            <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-blue-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17l5 5l-5 5m-6-10l-5-5l5-5m6 0l5-5l-5-5" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800">Licence professionnelle en Génie Informatique (2021 - 2022)</p>
+                    <p class="text-gray-600">HECM (Bénin)</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- Certifications Section -->
+       <section class="bg-gray-100 py-8">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Certifications</h2>
+    <div class="max-w-4xl mx-auto">
+        <ul class="space-y-6 text-lg text-gray-700">
+            <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-green-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800">Responsivité Web (Août 2022 - freeCodeCamp)</p>
+                    <p class="text-gray-600">Certificat de formation en Responsivité Web délivré par freeCodeCamp.</p>
+                </div>
+            </li>
+            <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-green-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800">JavaScript et Structures des données (Août 2022 - freeCodeCamp)</p>
+                    <p class="text-gray-600">Certificat de formation en JavaScript et structures des données délivré par freeCodeCamp.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <!-- Languages Section -->
+        <section class="bg-gray-50 py-8">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Langues</h2>
+            <div class="max-w-4xl mx-auto">
+                <ul class="space-y-4 text-lg text-gray-700">
+                    <li class="flex items-center space-x-4">
+                        <span class="text-xl font-bold text-gray-800">Français</span>
+                        <div class="flex-1 border-b border-gray-300"></div>
+                        <span class="text-gray-500">Langue maternelle</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="text-xl font-bold text-gray-800">Anglais</span>
+                        <div class="flex-1 border-b border-gray-300"></div>
+                        <span class="text-gray-500">Intermédiaire</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="text-xl font-bold text-gray-800">Fon</span>
+                        <div class="flex-1 border-b border-gray-300"></div>
+                        <span class="text-gray-500">Langue régionale</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Social Media Section -->
+       <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-semibold text-gray-800 mb-6">Réseaux Sociaux</h2>
+        <p class="text-xl text-gray-600 mb-8">Suivez-moi sur les réseaux sociaux pour rester connecté et découvrir mes derniers projets.</p>
+        <div class="flex justify-center gap-10">
+            <!-- LinkedIn -->
+            <a href="www.linkedin.com/in/helvis-dako-b760a9244" target="_blank" class="w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-gray-700 shadow-lg">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-12 h-12">
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Helvis-Ibis" target="_blank" class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-gray-900 shadow-lg">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-12 h-12">
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://www.facebook.com" target="_blank" class="w-20 h-20  rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-gray-600 shadow-lg">
+                <img src="./facebook.png" alt="Twitter" class="w-12 h-12">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4 mt-10">
+        <p>&copy; 2025 DAKO Mahougnon Helvis. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JavaScript pour l'effet de défilement -->
+   <script>
+        // Liste des images
+        const images = [
+            '../-6039689243812542466_121.jpg',
+            '../h.jpg',  // Changez cette URL par une autre image
+        ];
+
+        let currentImageIndex = 0;
+        const heroBackground = document.querySelector('.hero-background');
+
+        // Fonction pour changer l'image de fond
+        function changeBackgroundImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Incrémenter l'index, et revenir au début si on dépasse
+            heroBackground.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('${images[currentImageIndex]}')`;
+        }
+
+        // Initialisation de l'effet et changement d'image toutes les 5 secondes
+        setInterval(changeBackgroundImage, 5000);
+
+        
+
+
+    </script>
+
+
+</body>
+</html>
